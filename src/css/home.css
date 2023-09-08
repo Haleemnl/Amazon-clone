@@ -1,0 +1,96 @@
+.home {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-row {
+    display: flex;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.home-roww {
+    display: flex;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow-x: scroll;
+}
+
+
+.home-roww::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.home-roww {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.home-image {
+    object-fit: contain;
+    width: 100%;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: -1;
+    margin-bottom: -150px;
+}
+
+
+/* resct slick slider */
+
+.slick-slider {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.slick-slide>img {
+    display: none;
+}
+
+.slick-next {
+    /* font-size: 10px; */
+    /* line-height: 0; */
+    position: absolute;
+    top: 50% !important;
+    right: 1% !important;
+    display: block;
+    width: 20px !important;
+    height: 20px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    background-color: rgba(224, 216, 216, 0.693) !important;
+    padding-top: 20px !important;
+    padding-bottom: 40px !important;
+}
+
+.slick-prev {
+    position: absolute;
+    top: 50% !important;
+    left: 1% !important;
+    display: block;
+    width: 20px !important;
+    height: 20px;
+    z-index: 10;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    background-color: rgba(224, 216, 216, 0.693) !important;
+    padding-top: 20px !important;
+    padding-bottom: 40px !important;
+}
+
+.slick-slide img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+}
+
+.slick-dots li button {
+    display: none !important;
+}
